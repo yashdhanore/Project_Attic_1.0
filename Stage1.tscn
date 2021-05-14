@@ -216,6 +216,11 @@ animations = [ {
 "name": "WalkBack",
 "speed": 8.0
 }, {
+"frames": [ ExtResource( 15 ) ],
+"loop": false,
+"name": "IdleFront",
+"speed": 0.0
+}, {
 "frames": [ ExtResource( 12 ) ],
 "loop": false,
 "name": "IdleRight",
@@ -226,20 +231,15 @@ animations = [ {
 "name": "WalkFront",
 "speed": 8.0
 }, {
-"frames": [ ExtResource( 18 ) ],
-"loop": false,
-"name": "IdleBack",
-"speed": 0.0
-}, {
-"frames": [ ExtResource( 15 ) ],
-"loop": false,
-"name": "IdleFront",
-"speed": 0.0
-}, {
 "frames": [ ExtResource( 12 ), ExtResource( 11 ), ExtResource( 13 ) ],
 "loop": true,
 "name": "WalkRight",
 "speed": 8.0
+}, {
+"frames": [ ExtResource( 18 ) ],
+"loop": false,
+"name": "IdleBack",
+"speed": 0.0
 }, {
 "frames": [ ExtResource( 17 ), ExtResource( 14 ), ExtResource( 20 ) ],
 "loop": true,
@@ -416,6 +416,7 @@ frames = SubResource( 11 )
 animation = "IdleRight"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2( -1, 1 )
 shape = SubResource( 12 )
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
