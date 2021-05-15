@@ -6,7 +6,7 @@ const DOWN = Vector2(0,1)
 const LEFT = Vector2(-1,0)
 const RIGHT = Vector2(1,0)
 var speed = 0
-const MAX_SPEED = 150
+const MAX_SPEED = 7000
 var velocity = Vector2()
 
 func _physics_process(delta):
@@ -29,4 +29,4 @@ func _physics_process(delta):
 	
 	velocity = speed * direction.normalized() * delta
 	
-	move_and_collide(velocity)
+	move_and_slide(velocity)
