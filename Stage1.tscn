@@ -209,52 +209,32 @@ points = PoolVector2Array( 60.8456, 0, 64, 0, 64, 64, 60.9009, 64 )
 } ]
 2/z_index = 0
 
-[sub_resource type="RectangleShape2D" id=13]
+[sub_resource type="RectangleShape2D" id=11]
 extents = Vector2( 6.29065, 19.9977 )
 
-[sub_resource type="RectangleShape2D" id=14]
+[sub_resource type="RectangleShape2D" id=12]
 extents = Vector2( 15.0103, 33.1452 )
 
-[sub_resource type="RectangleShape2D" id=15]
+[sub_resource type="RectangleShape2D" id=13]
 extents = Vector2( 11.6443, 10 )
 
-[sub_resource type="RectangleShape2D" id=16]
+[sub_resource type="RectangleShape2D" id=14]
 extents = Vector2( 11.3061, 10 )
 
-[sub_resource type="RectangleShape2D" id=17]
+[sub_resource type="RectangleShape2D" id=15]
 extents = Vector2( 18.2228, 11.2374 )
 
-[sub_resource type="RectangleShape2D" id=18]
+[sub_resource type="RectangleShape2D" id=16]
 extents = Vector2( 15.9724, 10 )
 
-[sub_resource type="RectangleShape2D" id=19]
+[sub_resource type="RectangleShape2D" id=17]
 extents = Vector2( 14.9235, 12.7938 )
 
-[sub_resource type="SpriteFrames" id=11]
+[sub_resource type="SpriteFrames" id=18]
 animations = [ {
 "frames": [ ExtResource( 18 ), ExtResource( 19 ), ExtResource( 9 ) ],
 "loop": true,
 "name": "WalkBack",
-"speed": 8.0
-}, {
-"frames": [ ExtResource( 15 ) ],
-"loop": false,
-"name": "IdleFront",
-"speed": 0.0
-}, {
-"frames": [ ExtResource( 18 ) ],
-"loop": false,
-"name": "IdleBack",
-"speed": 0.0
-}, {
-"frames": [ ExtResource( 17 ), ExtResource( 14 ), ExtResource( 20 ) ],
-"loop": true,
-"name": "WalkLeft",
-"speed": 8.0
-}, {
-"frames": [ ExtResource( 12 ), ExtResource( 11 ), ExtResource( 13 ) ],
-"loop": true,
-"name": "WalkRight",
 "speed": 8.0
 }, {
 "frames": [ ExtResource( 15 ), ExtResource( 10 ), ExtResource( 16 ) ],
@@ -262,18 +242,38 @@ animations = [ {
 "name": "WalkFront",
 "speed": 8.0
 }, {
-"frames": [ ExtResource( 12 ) ],
-"loop": false,
-"name": "IdleRight",
-"speed": 0.0
-}, {
 "frames": [ ExtResource( 17 ) ],
 "loop": false,
 "name": "IdleLeft",
 "speed": 0.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 14 ), ExtResource( 20 ) ],
+"loop": true,
+"name": "WalkLeft",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 18 ) ],
+"loop": false,
+"name": "IdleBack",
+"speed": 0.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 11 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "WalkRight",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 15 ) ],
+"loop": false,
+"name": "IdleFront",
+"speed": 0.0
+}, {
+"frames": [ ExtResource( 12 ) ],
+"loop": false,
+"name": "IdleRight",
+"speed": 0.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=12]
+[sub_resource type="CapsuleShape2D" id=19]
 height = 3.9361
 
 [node name="Stage 1" type="Control"]
@@ -378,7 +378,7 @@ position = Vector2( -74.4168, -54.9547 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="furniture for attic/chair/StaticBody2D"]
 position = Vector2( 4.73557, -2.23653 )
-shape = SubResource( 13 )
+shape = SubResource( 11 )
 
 [node name="study table" type="Sprite" parent="furniture for attic"]
 position = Vector2( 423.032, 188.995 )
@@ -399,7 +399,7 @@ position = Vector2( -57.4544, -4.88506 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="furniture for attic/study table/StaticBody2D"]
 position = Vector2( 0, 4.18719 )
-shape = SubResource( 14 )
+shape = SubResource( 12 )
 
 [node name="window" type="Sprite" parent="furniture for attic"]
 position = Vector2( 173.418, 2.45567 )
@@ -441,7 +441,7 @@ position = Vector2( 57.1595, 66.2915 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="furniture for attic/boxes/2/StaticBody2D"]
 position = Vector2( 1.01465, 1.01466 )
-shape = SubResource( 15 )
+shape = SubResource( 13 )
 
 [node name="3" type="Sprite" parent="furniture for attic/boxes"]
 position = Vector2( 242.286, 9.3224 )
@@ -453,7 +453,7 @@ position = Vector2( 56.483, 67.3061 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="furniture for attic/boxes/3/StaticBody2D"]
 position = Vector2( 2.02933, 0 )
-shape = SubResource( 16 )
+shape = SubResource( 14 )
 
 [node name="4" type="Sprite" parent="furniture for attic/boxes"]
 position = Vector2( 202.896, 6.00676 )
@@ -477,7 +477,7 @@ position = Vector2( 26.0977, 68.6781 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="furniture for attic/boxes/6/StaticBody2D"]
 position = Vector2( 0.586487, -1.38466 )
-shape = SubResource( 17 )
+shape = SubResource( 15 )
 
 [node name="5" type="Sprite" parent="furniture for attic/boxes"]
 modulate = Color( 0.937255, 0.827451, 0.827451, 1 )
@@ -490,7 +490,7 @@ position = Vector2( 14.3217, 58.4131 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="furniture for attic/boxes/5/StaticBody2D"]
 position = Vector2( -1.19348, 0.307434 )
-shape = SubResource( 18 )
+shape = SubResource( 16 )
 
 [node name="7" type="Sprite" parent="furniture for attic/boxes"]
 modulate = Color( 0.894118, 0.827451, 0.827451, 1 )
@@ -502,7 +502,7 @@ texture = ExtResource( 34 )
 position = Vector2( 46.759, 37.7411 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="furniture for attic/boxes/7/StaticBody2D"]
-shape = SubResource( 19 )
+shape = SubResource( 17 )
 
 [node name="Player" type="KinematicBody2D" parent="."]
 position = Vector2( 173, 99 )
@@ -510,13 +510,13 @@ script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Player"]
 position = Vector2( -1.65332, -0.353546 )
-frames = SubResource( 11 )
+frames = SubResource( 18 )
 animation = "IdleRight"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2( -3.2475, 13.361 )
 rotation = 1.5708
-shape = SubResource( 12 )
+shape = SubResource( 19 )
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
 visible = false
