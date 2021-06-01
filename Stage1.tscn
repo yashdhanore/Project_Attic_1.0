@@ -251,6 +251,7 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 15 ), ExtResource( 10 ), ExtResource( 16 ) ],
 
+
 "loop": true,
 "name": "WalkFront",
 "speed": 8.0
@@ -277,6 +278,7 @@ animations = [ {
 "speed": 0.0
 }, {
 "frames": [ ExtResource( 12 ), ExtResource( 11 ), ExtResource( 13 ) ],
+
 "loop": true,
 "name": "WalkRight",
 "speed": 8.0
@@ -295,6 +297,26 @@ animations = [ {
 "speed": 8.0
 
 "frames": [ ExtResource( 15 ) ],
+"loop": false,
+"name": "IdleFront",
+"speed": 0.0
+}, {
+
+"frames": [ ExtResource( 12 ) ],
+"loop": false,
+"name": "IdleRight",
+"speed": 0.0
+
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 11 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "WalkRight",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 15 ) ],
+
+"frames": [ ExtResource( 17 ) ],
+
 "loop": false,
 "name": "IdleFront",
 "speed": 0.0
@@ -319,7 +341,6 @@ animations = [ {
 "loop": false,
 "name": "IdleRight",
 "speed": 0.0
-
 }, {
 "frames": [ ExtResource( 12 ), ExtResource( 11 ), ExtResource( 13 ) ],
 "loop": true,
