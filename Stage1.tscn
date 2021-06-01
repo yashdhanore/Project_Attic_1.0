@@ -232,7 +232,7 @@ extents = Vector2( 14.9235, 12.7938 )
 
 [sub_resource type="SpriteFrames" id=18]
 animations = [ {
-<<<<<<< HEAD
+
 "frames": [ ExtResource( 17 ) ],
 "loop": false,
 "name": "IdleLeft",
@@ -242,36 +242,35 @@ animations = [ {
 "loop": false,
 "name": "IdleRight",
 "speed": 0.0
-=======
+
 "frames": [ ExtResource( 18 ), ExtResource( 19 ), ExtResource( 9 ) ],
 "loop": true,
 "name": "WalkBack",
 "speed": 8.0
->>>>>>> parent of 005de5e (Added movement with W,A,S,D)
+
 }, {
 "frames": [ ExtResource( 15 ), ExtResource( 10 ), ExtResource( 16 ) ],
-<<<<<<< HEAD
+
 "loop": true,
 "name": "WalkFront",
 "speed": 8.0
 }, {
-<<<<<<< HEAD
+
 "frames": [ ExtResource( 18 ) ],
-=======
+
 "frames": [ ExtResource( 17 ) ],
->>>>>>> parent of 005de5e (Added movement with W,A,S,D)
+
 "loop": false,
 "name": "IdleBack",
 "speed": 0.0
 }, {
 "frames": [ ExtResource( 17 ), ExtResource( 14 ), ExtResource( 20 ) ],
-=======
->>>>>>> parent of 005de5e (Added movement with W,A,S,D)
+
 "loop": true,
 "name": "WalkLeft",
 "speed": 8.0
 }, {
-<<<<<<< HEAD
+
 "frames": [ ExtResource( 15 ) ],
 "loop": false,
 "name": "IdleFront",
@@ -281,19 +280,20 @@ animations = [ {
 "loop": true,
 "name": "WalkRight",
 "speed": 8.0
-=======
+
+
 "frames": [ ExtResource( 17 ) ],
 "loop": false,
 "name": "IdleLeft",
 "speed": 0.0
->>>>>>> parent of 005de5e (Added movement with W,A,S,D)
+
 }, {
-<<<<<<< HEAD
+
 "frames": [ ExtResource( 18 ), ExtResource( 19 ), ExtResource( 9 ) ],
 "loop": true,
 "name": "WalkBack",
 "speed": 8.0
-=======
+
 "frames": [ ExtResource( 15 ) ],
 "loop": false,
 "name": "IdleFront",
@@ -303,9 +303,7 @@ animations = [ {
 "loop": false,
 "name": "IdleRight",
 "speed": 0.0
-<<<<<<< HEAD
->>>>>>> parent of 005de5e (Added movement with W,A,S,D)
-=======
+
 }, {
 "frames": [ ExtResource( 12 ), ExtResource( 11 ), ExtResource( 13 ) ],
 "loop": true,
@@ -321,7 +319,22 @@ animations = [ {
 "loop": false,
 "name": "IdleRight",
 "speed": 0.0
->>>>>>> parent of 005de5e (Added movement with W,A,S,D)
+
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 11 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "WalkRight",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 15 ) ],
+"loop": false,
+"name": "IdleFront",
+"speed": 0.0
+}, {
+"frames": [ ExtResource( 12 ) ],
+"loop": false,
+"name": "IdleRight",
+"speed": 0.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=19]
