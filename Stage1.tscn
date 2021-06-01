@@ -271,6 +271,7 @@ format = 1
 tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 196608, 1, 0, 196609, 1, 0, 196610, 1, 0, 196611, 1, 0, 196613, 1, 0, 262148, 2, 0, 327684, 2, 0 )
 
 [node name="furniture for attic" type="StaticBody2D" parent="."]
+collision_layer = 5
 
 [node name="bed" type="Sprite" parent="furniture for attic"]
 position = Vector2( 34.3861, 140.709 )
@@ -285,6 +286,19 @@ script = ExtResource( 9 )
 position = Vector2( -1.52588e-05, -2.14302 )
 scale = Vector2( 1, 1 )
 polygon = PoolVector2Array( -14.2555, -13.9594, -39.167, -53.358, 12.6028, -53.7483, 13.6728, 40.6513, 11.5328, 40.3302, 1.54639, 40.3302, -35.9027, 40.6513, -38.3993, 40.9724, -40.1826, 40.6513, -39.4693, -54.0694 )
+
+[node name="Label" type="Label" parent="furniture for attic/bed/StaticBody2D"]
+visible = false
+margin_left = -42.8382
+margin_top = -69.4947
+margin_right = 82.1618
+margin_bottom = -55.4947
+text = "*Press E to Interact"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="dresser" type="Sprite" parent="furniture for attic"]
 modulate = Color( 0.941176, 0.796078, 0.796078, 1 )
@@ -451,6 +465,7 @@ position = Vector2( 46.759, 37.7411 )
 shape = SubResource( 17 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 173, 98.5546 )
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
 visible = false
