@@ -232,129 +232,44 @@ extents = Vector2( 14.9235, 12.7938 )
 
 [sub_resource type="SpriteFrames" id=18]
 animations = [ {
-
-"frames": [ ExtResource( 17 ) ],
-"loop": false,
-"name": "IdleLeft",
-"speed": 0.0
-}, {
-"frames": [ ExtResource( 12 ) ],
-"loop": false,
-"name": "IdleRight",
-"speed": 0.0
-
 "frames": [ ExtResource( 18 ), ExtResource( 19 ), ExtResource( 9 ) ],
 "loop": true,
 "name": "WalkBack",
 "speed": 8.0
-
+}, {
+"frames": [ ExtResource( 15 ) ],
+"loop": false,
+"name": "IdleFront",
+"speed": 0.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 11 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "WalkRight",
+"speed": 8.0
 }, {
 "frames": [ ExtResource( 15 ), ExtResource( 10 ), ExtResource( 16 ) ],
-
-
 "loop": true,
 "name": "WalkFront",
 "speed": 8.0
 }, {
-
-"frames": [ ExtResource( 18 ) ],
-
-"frames": [ ExtResource( 17 ) ],
-
-"loop": false,
-"name": "IdleBack",
-"speed": 0.0
-}, {
 "frames": [ ExtResource( 17 ), ExtResource( 14 ), ExtResource( 20 ) ],
-
 "loop": true,
 "name": "WalkLeft",
 "speed": 8.0
 }, {
-
-"frames": [ ExtResource( 15 ) ],
+"frames": [ ExtResource( 12 ) ],
 "loop": false,
-"name": "IdleFront",
+"name": "IdleRight",
 "speed": 0.0
 }, {
-"frames": [ ExtResource( 12 ), ExtResource( 11 ), ExtResource( 13 ) ],
-
-"loop": true,
-"name": "WalkRight",
-"speed": 8.0
-
-
 "frames": [ ExtResource( 17 ) ],
 "loop": false,
 "name": "IdleLeft",
 "speed": 0.0
-
 }, {
-
-"frames": [ ExtResource( 18 ), ExtResource( 19 ), ExtResource( 9 ) ],
-"loop": true,
-"name": "WalkBack",
-"speed": 8.0
-
-"frames": [ ExtResource( 15 ) ],
+"frames": [ ExtResource( 18 ) ],
 "loop": false,
-"name": "IdleFront",
-"speed": 0.0
-}, {
-
-"frames": [ ExtResource( 12 ) ],
-"loop": false,
-"name": "IdleRight",
-"speed": 0.0
-
-}, {
-"frames": [ ExtResource( 12 ), ExtResource( 11 ), ExtResource( 13 ) ],
-"loop": true,
-"name": "WalkRight",
-"speed": 8.0
-}, {
-"frames": [ ExtResource( 15 ) ],
-
-"frames": [ ExtResource( 17 ) ],
-
-"loop": false,
-"name": "IdleFront",
-"speed": 0.0
-}, {
-"frames": [ ExtResource( 12 ) ],
-"loop": false,
-"name": "IdleRight",
-"speed": 0.0
-
-}, {
-"frames": [ ExtResource( 12 ), ExtResource( 11 ), ExtResource( 13 ) ],
-"loop": true,
-"name": "WalkRight",
-"speed": 8.0
-}, {
-"frames": [ ExtResource( 15 ) ],
-"loop": false,
-"name": "IdleFront",
-"speed": 0.0
-}, {
-"frames": [ ExtResource( 12 ) ],
-"loop": false,
-"name": "IdleRight",
-"speed": 0.0
-}, {
-"frames": [ ExtResource( 12 ), ExtResource( 11 ), ExtResource( 13 ) ],
-"loop": true,
-"name": "WalkRight",
-"speed": 8.0
-}, {
-"frames": [ ExtResource( 15 ) ],
-"loop": false,
-"name": "IdleFront",
-"speed": 0.0
-}, {
-"frames": [ ExtResource( 12 ) ],
-"loop": false,
-"name": "IdleRight",
+"name": "IdleBack",
 "speed": 0.0
 } ]
 
