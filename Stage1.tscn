@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=2]
+[gd_scene load_steps=55 format=2]
 
 [ext_resource path="res://assets/wood flooring.png" type="Texture" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
@@ -36,7 +36,6 @@
 [ext_resource path="res://assets/furniture/box3.png" type="Texture" id=34]
 [ext_resource path="res://assets/furniture/box1.png" type="Texture" id=35]
 [ext_resource path="res://assets/furniture/clothes box.png" type="Texture" id=36]
-[ext_resource path="res://assets/Font/AGoblinAppears-o2aV.ttf" type="DynamicFontData" id=37]
 
 [sub_resource type="TileSet" id=1]
 0/name = "right roof.png 0"
@@ -210,10 +209,6 @@ points = PoolVector2Array( 60.8456, 0, 64, 0, 64, 64, 60.9009, 64 )
 } ]
 2/z_index = 0
 
-[sub_resource type="DynamicFont" id=11]
-size = 10
-font_data = ExtResource( 37 )
-
 [sub_resource type="RectangleShape2D" id=12]
 extents = Vector2( 6.29065, 19.9977 )
 
@@ -310,7 +305,6 @@ margin_left = -42.8382
 margin_top = -69.4947
 margin_right = 82.1618
 margin_bottom = -55.4947
-custom_fonts/font = SubResource( 11 )
 text = "*Press E to Interact"
 align = 1
 valign = 1
