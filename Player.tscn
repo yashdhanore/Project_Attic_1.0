@@ -1,0 +1,79 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://assets/walkingsprites/right side idle.png" type="Texture" id=1]
+[ext_resource path="res://assets/walkingsprites/front idle.png" type="Texture" id=2]
+[ext_resource path="res://assets/walkingsprites/front left leg ahead.png" type="Texture" id=3]
+[ext_resource path="res://assets/walkingsprites/front right leg ahead.png" type="Texture" id=4]
+[ext_resource path="res://assets/walkingsprites/back idle.png" type="Texture" id=5]
+[ext_resource path="res://assets/walkingsprites/right side left leg ahead.png" type="Texture" id=6]
+[ext_resource path="res://assets/walkingsprites/back right leg ahead.png" type="Texture" id=7]
+[ext_resource path="res://assets/walkingsprites/left side left leg ahead.png" type="Texture" id=8]
+[ext_resource path="res://assets/walkingsprites/left side right leg ahead.png" type="Texture" id=9]
+[ext_resource path="res://assets/walkingsprites/right side right leg ahead.png" type="Texture" id=10]
+[ext_resource path="res://assets/walkingsprites/back left leg ahead.png" type="Texture" id=11]
+[ext_resource path="res://assets/walkingsprites/left side idle.png" type="Texture" id=12]
+[ext_resource path="res://Player/Player.gd" type="Script" id=13]
+[ext_resource path="res://Interact.tscn" type="PackedScene" id=14]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 11 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "WalkBack",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 6 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "WalkRight",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "WalkLeft",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 5 ) ],
+"loop": false,
+"name": "IdleBack",
+"speed": 0.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": false,
+"name": "IdleFront",
+"speed": 0.0
+}, {
+"frames": [ ExtResource( 12 ) ],
+"loop": false,
+"name": "IdleLeft",
+"speed": 0.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "WalkFront",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": false,
+"name": "IdleRight",
+"speed": 0.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 7.1791
+
+[node name="Player" type="KinematicBody2D"]
+position = Vector2( 173, 99 )
+script = ExtResource( 13 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -1.65332, -0.353546 )
+frames = SubResource( 1 )
+animation = "IdleRight"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -3.95833, 15.6552 )
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="Interact" parent="." instance=ExtResource( 14 )]
+position = Vector2( -3.86826, 15.5648 )
