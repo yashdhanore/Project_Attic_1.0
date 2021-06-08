@@ -47,3 +47,10 @@ func _physics_process(delta):
 	velocity = speed * direction.normalized() * delta
 	
 	move_and_slide(velocity)
+	
+func set_active(active):
+	set_physics_process(active)
+	set_process(active)
+	set_process_input(active)
+	
+

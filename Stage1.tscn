@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=2]
+[gd_scene load_steps=59 format=2]
 
 [ext_resource path="res://assets/wood flooring.png" type="Texture" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
@@ -37,6 +37,8 @@
 [ext_resource path="res://assets/furniture/box1.png" type="Texture" id=35]
 [ext_resource path="res://assets/furniture/clothes box.png" type="Texture" id=36]
 [ext_resource path="res://assets/Font/AGoblinAppears-o2aV.ttf" type="DynamicFontData" id=37]
+[ext_resource path="res://assets/Dialogue box/navy blue.jpg" type="Texture" id=38]
+[ext_resource path="res://Dialogue Player.gd" type="Script" id=39]
 
 [sub_resource type="TileSet" id=1]
 0/name = "right roof.png 0"
@@ -299,6 +301,45 @@ texture = ExtResource( 28 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="furniture for attic/bed"]
 script = ExtResource( 9 )
+
+[node name="DialoguePlayer" type="CanvasLayer" parent="furniture for attic/bed/StaticBody2D"]
+script = ExtResource( 39 )
+dialogue_file = "res://assets/Dialogue box/jsons/bed.json"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="furniture for attic/bed/StaticBody2D/DialoguePlayer"]
+visible = false
+margin_left = 203.0
+margin_top = 39.0
+margin_right = 568.0
+margin_bottom = 121.0
+texture = ExtResource( 38 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="RichTextLabel" parent="furniture for attic/bed/StaticBody2D/DialoguePlayer/NinePatchRect"]
+margin_left = 5.55591
+margin_top = 4.9685
+margin_right = 56.5559
+margin_bottom = 23.9685
+text = "Name"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Message" type="RichTextLabel" parent="furniture for attic/bed/StaticBody2D/DialoguePlayer/NinePatchRect"]
+margin_left = 24.0
+margin_top = 26.3811
+margin_right = 348.0
+margin_bottom = 78.3811
+text = "Message"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="furniture for attic/bed/StaticBody2D/DialoguePlayer"]
+wait_time = 0.4
+one_shot = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="furniture for attic/bed/StaticBody2D"]
 position = Vector2( -1.52588e-05, -2.14302 )
@@ -628,3 +669,5 @@ position = Vector2( -22.2057, 52.4549 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[connection signal="timeout" from="furniture for attic/bed/StaticBody2D/DialoguePlayer/Timer" to="furniture for attic/bed/StaticBody2D/DialoguePlayer" method="_on_Timer_timeout"]
