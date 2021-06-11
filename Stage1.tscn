@@ -304,7 +304,7 @@ script = ExtResource( 9 )
 
 [node name="DialoguePlayer" type="CanvasLayer" parent="furniture for attic/bed/StaticBody2D"]
 script = ExtResource( 39 )
-dialogue_file = "res://assets/Dialogue box/jsons/bed.json"
+dialogue_file = "res://assets/Dialogue box/jsons/bed/bed.json"
 
 [node name="NinePatchRect" type="NinePatchRect" parent="furniture for attic/bed/StaticBody2D/DialoguePlayer"]
 visible = false
@@ -359,6 +359,72 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="closet top" type="Sprite" parent="furniture for attic"]
+position = Vector2( 112.839, 339.96 )
+rotation = 1.5708
+scale = Vector2( 1.6324, 1.86499 )
+texture = ExtResource( 26 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="furniture for attic/closet top"]
+position = Vector2( -29.2234, 45.8919 )
+script = ExtResource( 11 )
+
+[node name="DialoguePlayer" type="CanvasLayer" parent="furniture for attic/closet top/StaticBody2D"]
+script = ExtResource( 39 )
+dialogue_file = "res://assets/Dialogue box/jsons/closet/closet top.json"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="furniture for attic/closet top/StaticBody2D/DialoguePlayer"]
+visible = false
+margin_left = 203.0
+margin_top = 39.0
+margin_right = 568.0
+margin_bottom = 121.0
+texture = ExtResource( 38 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="RichTextLabel" parent="furniture for attic/closet top/StaticBody2D/DialoguePlayer/NinePatchRect"]
+margin_left = 5.55591
+margin_top = 4.9685
+margin_right = 56.5559
+margin_bottom = 23.9685
+text = "Name"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Message" type="RichTextLabel" parent="furniture for attic/closet top/StaticBody2D/DialoguePlayer/NinePatchRect"]
+margin_left = 24.0
+margin_top = 26.3811
+margin_right = 348.0
+margin_bottom = 78.3811
+text = "Message"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="furniture for attic/closet top/StaticBody2D/DialoguePlayer"]
+wait_time = 0.4
+one_shot = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="furniture for attic/closet top/StaticBody2D"]
+polygon = PoolVector2Array( 0.0810394, -10.6349, 6.09761, -23.4244, -9.54562, -23.2739, -9.20161, 20.6618, 6.26968, 20.8123, 5.9257, -23.1235 )
+
+[node name="Label" type="Label" parent="furniture for attic/closet top/StaticBody2D"]
+visible = false
+margin_left = 9.48361
+margin_top = 27.5081
+margin_right = 134.484
+margin_bottom = 41.5081
+rect_rotation = -89.9195
+text = "*Press E to Interact"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="dresser" type="Sprite" parent="furniture for attic"]
 modulate = Color( 0.941176, 0.796078, 0.796078, 1 )
 position = Vector2( 38.4521, 133.268 )
@@ -378,33 +444,6 @@ margin_top = -29.3997
 margin_right = 106.291
 margin_bottom = -15.3997
 text = "*Press E to Interact"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="closet top" type="Sprite" parent="furniture for attic"]
-position = Vector2( 112.839, 339.96 )
-rotation = 1.5708
-scale = Vector2( 1.6324, 1.86499 )
-texture = ExtResource( 26 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="furniture for attic/closet top"]
-position = Vector2( -29.2234, 45.8919 )
-script = ExtResource( 11 )
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="furniture for attic/closet top/StaticBody2D"]
-polygon = PoolVector2Array( 0.0810394, -10.6349, 6.09761, -23.4244, -9.54562, -23.2739, -9.20161, 20.6618, 6.26968, 20.8123, 5.9257, -23.1235 )
-
-[node name="Label" type="Label" parent="furniture for attic/closet top/StaticBody2D"]
-visible = false
-margin_left = 9.48361
-margin_top = 27.5081
-margin_right = 134.484
-margin_bottom = 41.5081
-rect_rotation = -89.9195
-text = "*Press E to Interact"
-align = 1
-valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -455,6 +494,45 @@ texture = ExtResource( 23 )
 [node name="StaticBody2D" type="StaticBody2D" parent="furniture for attic/study table"]
 position = Vector2( -57.4544, -4.88506 )
 script = ExtResource( 13 )
+
+[node name="DialoguePlayer" type="CanvasLayer" parent="furniture for attic/study table/StaticBody2D"]
+script = ExtResource( 39 )
+dialogue_file = "res://assets/Dialogue box/jsons/desk.json"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="furniture for attic/study table/StaticBody2D/DialoguePlayer"]
+visible = false
+margin_left = 203.0
+margin_top = 39.0
+margin_right = 568.0
+margin_bottom = 121.0
+texture = ExtResource( 38 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="RichTextLabel" parent="furniture for attic/study table/StaticBody2D/DialoguePlayer/NinePatchRect"]
+margin_left = 5.55591
+margin_top = 4.9685
+margin_right = 56.5559
+margin_bottom = 23.9685
+text = "Name"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Message" type="RichTextLabel" parent="furniture for attic/study table/StaticBody2D/DialoguePlayer/NinePatchRect"]
+margin_left = 24.0
+margin_top = 26.3811
+margin_right = 348.0
+margin_bottom = 78.3811
+text = "Message"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="furniture for attic/study table/StaticBody2D/DialoguePlayer"]
+wait_time = 0.4
+one_shot = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="furniture for attic/study table/StaticBody2D"]
 position = Vector2( 0, 4.18719 )
@@ -671,3 +749,5 @@ position = Vector2( -22.2057, 52.4549 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 
 [connection signal="timeout" from="furniture for attic/bed/StaticBody2D/DialoguePlayer/Timer" to="furniture for attic/bed/StaticBody2D/DialoguePlayer" method="_on_Timer_timeout"]
+[connection signal="timeout" from="furniture for attic/closet top/StaticBody2D/DialoguePlayer/Timer" to="furniture for attic/closet top/StaticBody2D/DialoguePlayer" method="_on_Timer_timeout"]
+[connection signal="timeout" from="furniture for attic/study table/StaticBody2D/DialoguePlayer/Timer" to="furniture for attic/study table/StaticBody2D/DialoguePlayer" method="_on_Timer_timeout"]
