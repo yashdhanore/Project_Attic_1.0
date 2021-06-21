@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-export(String, FILE, "*.json") var dialogue_file
+export(String, FILE, "*.json") var dialogue_file: String
 
 var dialogues = []
 var current_dialogue_id = 0
@@ -34,7 +34,9 @@ func next_line():
 		$NinePatchRect.visible = false
 		turn_on_the_player()
 		return
-	
+		
+	$Tween.interpolate_property($NinePatchRect/Message, "percent_visible", 0.0, 1.0, 0.5,Tween.TRANS_LINEAR,Tween.EASE_IN_OUT)
+	$Tween.start()
 	$NinePatchRect/Name.text = dialogues[current_dialogue_id]["name"]
 	$NinePatchRect/Message.text = dialogues[current_dialogue_id]["text"]
 	

@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Dialogue Player.gd" type="Script" id=1]
+[ext_resource path="res://assets/Dialogue box/navy blue.jpg" type="Texture" id=2]
+
+[node name="DialoguePlayer" type="CanvasLayer"]
+script = ExtResource( 1 )
+dialogue_file = "res://assets/Dialogue box/jsons/bed/bed.json"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+visible = false
+margin_left = 203.0
+margin_top = 39.0
+margin_right = 568.0
+margin_bottom = 121.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="RichTextLabel" parent="NinePatchRect"]
+margin_left = 5.55591
+margin_top = 4.9685
+margin_right = 56.5559
+margin_bottom = 23.9685
+text = "Name"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Message" type="RichTextLabel" parent="NinePatchRect"]
+margin_left = 24.0
+margin_top = 26.3811
+margin_right = 348.0
+margin_bottom = 78.3811
+text = "Message"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.4
+one_shot = true
+
+[node name="Tween" type="Tween" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
