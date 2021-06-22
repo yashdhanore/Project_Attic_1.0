@@ -24,7 +24,7 @@ func _input(event):
 	if not is_dialogue_active:
 		return
 	
-	if event.is_action_pressed("game_usage"):
+	if event.is_action_pressed("action"):
 		next_line()
 	
 func next_line():

@@ -4,7 +4,7 @@ func onEnter():
 	$Label.show()
 	
 func _input(event):
-	if event.is_action_pressed("game_usage"):
+	if event.is_action_pressed("action"):
 		find_and_use_dialogue()
 		
 func find_and_use_dialogue():
