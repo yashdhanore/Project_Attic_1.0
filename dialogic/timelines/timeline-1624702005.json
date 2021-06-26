@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1624701332.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "A dresser. The drawers are empty."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.2.1",
+		"file": "timeline-1624702005.json",
+		"name": "timeline-8"
+	}
+}

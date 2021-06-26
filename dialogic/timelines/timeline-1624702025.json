@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1624701341.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "An empty closet. There's a cockroach inside."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.2.1",
+		"file": "timeline-1624702025.json",
+		"name": "timeline-9"
+	}
+}

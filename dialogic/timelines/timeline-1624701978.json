@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1624701320.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "An open box filled with dusty clothes. They look like they belong to a young girl."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.2.1",
+		"file": "timeline-1624701978.json",
+		"name": "timeline-7"
+	}
+}

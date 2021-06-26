@@ -9,6 +9,31 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Node",
+"class": "Dialogic",
+"language": "GDScript",
+"path": "res://addons/dialogic/Other/DialogicClass.gd"
+}, {
+"base": "Control",
+"class": "DialogicBackgroundMusic",
+"language": "GDScript",
+"path": "res://addons/dialogic/Nodes/BackgroundMusic.gd"
+}, {
+"base": "Node",
+"class": "DialogicDefinitionsUtil",
+"language": "GDScript",
+"path": "res://addons/dialogic/Other/DialogicDefinitionsUtil.gd"
+}, {
+"base": "Reference",
+"class": "DialogicResources",
+"language": "GDScript",
+"path": "res://addons/dialogic/Other/DialogicResources.gd"
+}, {
+"base": "Reference",
+"class": "DialogicUtil",
+"language": "GDScript",
+"path": "res://addons/dialogic/Other/DialogicUtil.gd"
+}, {
 "base": "StaticBody2D",
 "class": "Interactive",
 "language": "GDScript",
@@ -20,6 +45,11 @@ _global_script_classes=[ {
 "path": "res://StaticVariance.gd"
 } ]
 _global_script_class_icons={
+"Dialogic": "",
+"DialogicBackgroundMusic": "",
+"DialogicDefinitionsUtil": "",
+"DialogicResources": "",
+"DialogicUtil": "",
 "Interactive": "",
 "StaticVariance": ""
 }
@@ -30,13 +60,21 @@ config/name="Project Nall"
 run/main_scene="res://Stage1.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+DialogicSingleton="*res://addons/dialogic/Other/DialogicSingleton.gd"
+
 [display]
 
 window/size/width=800
 window/size/height=450
-window/size/test_width=1920
-window/size/test_height=1080
+window/size/test_width=1200
+window/size/test_height=960
 window/stretch/mode="2d"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg" )
 
 [importer_defaults]
 
