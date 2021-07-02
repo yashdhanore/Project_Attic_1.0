@@ -1,7 +1,5 @@
 extends Interactive
 
-func onEnter():
-	$Label.show()
 	
 func onInput(event: InputEvent):
 	if get_node_or_null('DialogNode') == null:
@@ -15,6 +13,4 @@ func onInput(event: InputEvent):
 func unpause(timeline_name):
 	get_tree().paused = false  
 		
-func onExit():
-	$Label.hide()
-	
+

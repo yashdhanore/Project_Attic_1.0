@@ -299,19 +299,6 @@ script = ExtResource( 9 )
 position = Vector2( -1.52588e-05, -2.14302 )
 polygon = PoolVector2Array( -14.2555, -13.9594, -39.167, -53.358, 12.6028, -53.7483, 13.6728, 40.6513, 11.5328, 40.3302, 1.54639, 40.3302, -35.9027, 40.6513, -38.3993, 40.9724, -40.1826, 40.6513, -39.4693, -54.0694 )
 
-[node name="Label" type="Label" parent="furniture for attic/bed/StaticBody2D"]
-visible = false
-margin_left = -11.0
-margin_top = 152.0
-margin_right = 184.0
-margin_bottom = 166.0
-text = "*Press E to Interact"
-align = 1
-valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="dresser" type="Sprite" parent="furniture for attic"]
 modulate = Color( 0.941176, 0.796078, 0.796078, 1 )
 position = Vector2( 38.4521, 133.268 )
@@ -323,19 +310,6 @@ script = ExtResource( 10 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="furniture for attic/dresser/StaticBody2D"]
 polygon = PoolVector2Array( 10.2979, 11.232, 16.2979, 11.482, 16.2979, -14.018, -16.2021, -13.268, -15.7021, 15.732, 17.0479, 15.482, 16.2979, 11.232 )
-
-[node name="Label" type="Label" parent="furniture for attic/dresser/StaticBody2D"]
-visible = false
-margin_left = -17.2474
-margin_top = 213.043
-margin_right = 119.753
-margin_bottom = 232.043
-text = "*Press E to Interact"
-align = 1
-valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="closet top" type="Sprite" parent="furniture for attic"]
 position = Vector2( 112.839, 339.96 )
@@ -349,20 +323,6 @@ script = ExtResource( 11 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="furniture for attic/closet top/StaticBody2D"]
 polygon = PoolVector2Array( 0.0810394, -10.6349, 6.09761, -23.4244, -9.54562, -23.2739, -9.20161, 20.6618, 6.26968, 20.8123, 5.9257, -23.1235 )
-
-[node name="Label" type="Label" parent="furniture for attic/closet top/StaticBody2D"]
-visible = false
-margin_left = 9.48361
-margin_top = 27.5081
-margin_right = 134.484
-margin_bottom = 41.5081
-rect_rotation = -89.9195
-text = "*Press E to Interact"
-align = 1
-valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="mat" type="Sprite" parent="furniture for attic"]
 position = Vector2( -7.3773, 154.994 )
@@ -381,17 +341,6 @@ script = ExtResource( 12 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="furniture for attic/chair/StaticBody2D"]
 position = Vector2( 4.73557, -2.23653 )
 shape = SubResource( 11 )
-
-[node name="Label" type="Label" parent="furniture for attic/chair/StaticBody2D"]
-visible = false
-margin_left = 0.358337
-margin_top = -43.6669
-margin_right = 125.358
-margin_bottom = -29.6669
-text = "*Press E to Interact"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="study table" type="Sprite" parent="furniture for attic"]
 position = Vector2( 423.032, 188.995 )
@@ -415,15 +364,6 @@ script = ExtResource( 13 )
 position = Vector2( 0, 4.18719 )
 shape = SubResource( 12 )
 
-[node name="Label" type="Label" parent="furniture for attic/study table/StaticBody2D"]
-visible = false
-margin_right = 40.0
-margin_bottom = 14.0
-text = "*Press E to Interact"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="window" type="Sprite" parent="furniture for attic"]
 position = Vector2( 173.418, 2.45567 )
 scale = Vector2( 1.24552, 1.24552 )
@@ -435,17 +375,6 @@ script = ExtResource( 20 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="furniture for attic/window/StaticBody2D"]
 position = Vector2( -45.0611, 42.4181 )
 shape = SubResource( 13 )
-
-[node name="Label" type="Label" parent="furniture for attic/window/StaticBody2D"]
-visible = false
-margin_left = 37.4272
-margin_top = -34.0248
-margin_right = 162.427
-margin_bottom = -20.0248
-text = "*Press E to Interact"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="curtain" type="Sprite" parent="furniture for attic"]
 position = Vector2( 197.135, 21.9117 )
@@ -469,17 +398,6 @@ position = Vector2( -2.67977, 2.56293 )
 scale = Vector2( 1.375, 1.22273 )
 polygon = PoolVector2Array( -11.1488, -11.3175, 7.42752, -11.128, 7.42752, 5.55286, 0.731842, 9.66504, -1.48154, 9.5335, -10.0115, 9.34395 )
 
-[node name="Label" type="Label" parent="furniture for attic/boxes/nb stack/StaticBody2D"]
-visible = false
-margin_left = 26.4796
-margin_top = 15.3868
-margin_right = 151.48
-margin_bottom = 29.3868
-text = "*Press E to Interact"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="1" type="Sprite" parent="furniture for attic/boxes"]
 modulate = Color( 0.960784, 0.898039, 0.898039, 1 )
 position = Vector2( 231.595, -23.3597 )
@@ -500,15 +418,6 @@ script = ExtResource( 15 )
 position = Vector2( 1.01465, 1.01466 )
 shape = SubResource( 14 )
 
-[node name="Label" type="Label" parent="furniture for attic/boxes/2/StaticBody2D"]
-visible = false
-margin_right = 40.0
-margin_bottom = 14.0
-text = "*Press E to Interact"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="3" type="Sprite" parent="furniture for attic/boxes"]
 position = Vector2( 242.286, 9.3224 )
 scale = Vector2( 1.47832, 1.47832 )
@@ -522,15 +431,6 @@ script = ExtResource( 17 )
 position = Vector2( 5.34388, 0.150665 )
 shape = SubResource( 15 )
 
-[node name="Label" type="Label" parent="furniture for attic/boxes/3/StaticBody2D"]
-visible = false
-margin_right = 40.0
-margin_bottom = 14.0
-text = "*Press E to Interact"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="4" type="Sprite" parent="furniture for attic/boxes"]
 position = Vector2( 202.896, 6.00676 )
 scale = Vector2( 1.33371, 1.33371 )
@@ -542,17 +442,6 @@ script = ExtResource( 16 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="furniture for attic/boxes/4/StaticBody2D"]
 polygon = PoolVector2Array( -10.7968, -10.5629, -16.2328, -10.7504, -6.67297, -19.9353, 14.5085, -16.5612, 15.0709, -4.37717, 19.0073, -4.93951, 19.757, 16.6169, -17.3575, 17.7416, -16.6077, -10.7504 )
-
-[node name="Label" type="Label" parent="furniture for attic/boxes/4/StaticBody2D"]
-visible = false
-margin_left = -22.6465
-margin_top = -32.9083
-margin_right = 102.353
-margin_bottom = -18.9083
-text = "*Press E to Interact"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="6" type="Sprite" parent="furniture for attic/boxes"]
 modulate = Color( 0.952941, 0.866667, 0.866667, 1 )
@@ -581,17 +470,6 @@ script = ExtResource( 18 )
 position = Vector2( -1.19348, 0.307434 )
 shape = SubResource( 17 )
 
-[node name="Label" type="Label" parent="furniture for attic/boxes/5/StaticBody2D"]
-visible = false
-margin_left = 7.27054
-margin_top = -9.44583
-margin_right = 132.271
-margin_bottom = 4.55417
-text = "*Press E to Interact"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="7" type="Sprite" parent="furniture for attic/boxes"]
 modulate = Color( 0.894118, 0.827451, 0.827451, 1 )
 position = Vector2( 272.307, 232.237 )
@@ -604,17 +482,6 @@ script = ExtResource( 19 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="furniture for attic/boxes/7/StaticBody2D"]
 shape = SubResource( 18 )
-
-[node name="Label" type="Label" parent="furniture for attic/boxes/7/StaticBody2D"]
-visible = false
-margin_left = 14.1541
-margin_top = 0.353851
-margin_right = 139.154
-margin_bottom = 14.3539
-text = "*Press E to Interact"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 171.381, 123.725 )
