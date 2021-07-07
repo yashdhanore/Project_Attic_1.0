@@ -47,3 +47,7 @@ func _physics_process(delta):
 	velocity = speed * direction.normalized() * delta
 	
 	move_and_slide(velocity)
+
+
+func _on_Area2D_body_entered(body):
+	pass # Replace with function body.

@@ -491,9 +491,6 @@ shape = SubResource( 18 )
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 175.127, 125.223 )
 
-[node name="Camera2D" type="Camera2D" parent="Player"]
-current = true
-
 [node name="Mom" parent="." instance=ExtResource( 37 )]
 position = Vector2( 268.999, 509.453 )
 

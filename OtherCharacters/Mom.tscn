@@ -4,14 +4,15 @@
 [ext_resource path="res://OtherCharacters/Mom.gd" type="Script" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 12.026
+radius = 13.4907
 height = 0.0
 
 [sub_resource type="CapsuleShape2D" id=2]
-radius = 34.2114
-height = 309.096
+radius = 47.9949
+height = 282.644
 
 [node name="Mom" type="KinematicBody2D"]
+position = Vector2( -1.68179, -2.10225 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
@@ -29,5 +30,4 @@ shape = SubResource( 1 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource( 2 )
 
-[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
-[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]
+[connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
