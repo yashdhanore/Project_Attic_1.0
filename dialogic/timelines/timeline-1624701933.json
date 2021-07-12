@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1624701292.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "A table with two blank notebooks."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.2.1",
+		"file": "timeline-1624701933.json",
+		"name": "timeline-4"
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1624658201.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "A comfortable bed but, now is not the time to sleep!"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.2.1",
+		"file": "timeline-1624658217.json",
+		"name": "timeline-1"
+	}
+}

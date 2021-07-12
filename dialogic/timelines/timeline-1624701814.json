@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1624701274.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "A couple of boxes sealed with tape."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.2.1",
+		"file": "timeline-1624701814.json",
+		"name": "timeline-2"
+	}
+}
