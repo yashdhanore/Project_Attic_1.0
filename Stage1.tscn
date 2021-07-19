@@ -20,22 +20,22 @@
 [ext_resource path="res://5.gd" type="Script" id=18]
 [ext_resource path="res://7.gd" type="Script" id=19]
 [ext_resource path="res://Window.gd" type="Script" id=20]
-[ext_resource path="res://assets/furniture/chair side.png" type="Texture" id=21]
-[ext_resource path="res://assets/furniture/study table.png" type="Texture" id=22]
-[ext_resource path="res://assets/furniture/pnb.png" type="Texture" id=23]
-[ext_resource path="res://assets/furniture/translucent curtain.png" type="Texture" id=24]
-[ext_resource path="res://assets/furniture/window.png" type="Texture" id=25]
-[ext_resource path="res://assets/furniture/closet.png" type="Texture" id=26]
-[ext_resource path="res://assets/furniture/gnb.png" type="Texture" id=27]
-[ext_resource path="res://assets/furniture/bed.png" type="Texture" id=28]
-[ext_resource path="res://assets/furniture/roof.png" type="Texture" id=29]
-[ext_resource path="res://assets/furniture/dresser.png" type="Texture" id=30]
-[ext_resource path="res://assets/furniture/mat.png" type="Texture" id=31]
-[ext_resource path="res://assets/furniture/books stack.png" type="Texture" id=32]
-[ext_resource path="res://assets/furniture/box2.png" type="Texture" id=33]
-[ext_resource path="res://assets/furniture/box3.png" type="Texture" id=34]
-[ext_resource path="res://assets/furniture/box1.png" type="Texture" id=35]
-[ext_resource path="res://assets/furniture/clothes box.png" type="Texture" id=36]
+[ext_resource path="res://assets/furniture of attic/window.png" type="Texture" id=21]
+[ext_resource path="res://assets/furniture of attic/bed.png" type="Texture" id=22]
+[ext_resource path="res://assets/furniture of attic/closet.png" type="Texture" id=23]
+[ext_resource path="res://assets/furniture of attic/study table.png" type="Texture" id=24]
+[ext_resource path="res://assets/furniture of attic/pnb.png" type="Texture" id=25]
+[ext_resource path="res://assets/furniture of attic/roof.png" type="Texture" id=26]
+[ext_resource path="res://assets/furniture of attic/box2.png" type="Texture" id=27]
+[ext_resource path="res://assets/furniture of attic/chair side.png" type="Texture" id=28]
+[ext_resource path="res://assets/furniture of attic/dresser.png" type="Texture" id=29]
+[ext_resource path="res://assets/furniture of attic/mat.png" type="Texture" id=30]
+[ext_resource path="res://assets/furniture of attic/gnb.png" type="Texture" id=31]
+[ext_resource path="res://assets/furniture of attic/books stack.png" type="Texture" id=32]
+[ext_resource path="res://assets/furniture of attic/box3.png" type="Texture" id=33]
+[ext_resource path="res://assets/furniture of attic/translucent curtain.png" type="Texture" id=34]
+[ext_resource path="res://assets/furniture of attic/box1.png" type="Texture" id=35]
+[ext_resource path="res://assets/furniture of attic/clothes box.png" type="Texture" id=36]
 [ext_resource path="res://OtherCharacters/Mom.tscn" type="PackedScene" id=37]
 
 [sub_resource type="TileSet" id=1]
@@ -251,7 +251,7 @@ __meta__ = {
 modulate = Color( 0.968627, 0.909804, 0.909804, 1 )
 position = Vector2( 172.802, -52.8607 )
 scale = Vector2( 2.12289, 1.19596 )
-texture = ExtResource( 29 )
+texture = ExtResource( 26 )
 
 [node name="right roof" type="TileMap" parent="."]
 position = Vector2( -19.0273, 53.5143 )
@@ -295,7 +295,7 @@ __meta__ = {
 [node name="bed" type="Sprite" parent="furniture for attic"]
 position = Vector2( 34.3861, 140.709 )
 scale = Vector2( 1.05024, 1.16659 )
-texture = ExtResource( 28 )
+texture = ExtResource( 22 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="furniture for attic/bed"]
 script = ExtResource( 9 )
@@ -307,7 +307,7 @@ polygon = PoolVector2Array( -14.2555, -13.9594, -39.167, -53.358, 12.6028, -53.7
 [node name="dresser" type="Sprite" parent="furniture for attic"]
 modulate = Color( 0.941176, 0.796078, 0.796078, 1 )
 position = Vector2( 38.4521, 133.268 )
-texture = ExtResource( 30 )
+texture = ExtResource( 29 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="furniture for attic/dresser"]
 position = Vector2( 34.5, -29.5 )
@@ -320,7 +320,7 @@ polygon = PoolVector2Array( 10.2979, 11.232, 16.2979, 11.482, 16.2979, -14.018, 
 position = Vector2( 112.839, 339.96 )
 rotation = 1.5708
 scale = Vector2( 1.6324, 1.86499 )
-texture = ExtResource( 26 )
+texture = ExtResource( 23 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="furniture for attic/closet top"]
 position = Vector2( -29.2234, 45.8919 )
@@ -332,12 +332,12 @@ polygon = PoolVector2Array( 0.0810394, -10.6349, 6.09761, -23.4244, -9.54562, -2
 [node name="mat" type="Sprite" parent="furniture for attic"]
 position = Vector2( -7.3773, 154.994 )
 scale = Vector2( 3.69391, 3.69391 )
-texture = ExtResource( 31 )
+texture = ExtResource( 30 )
 
 [node name="chair" type="Sprite" parent="furniture for attic"]
 position = Vector2( 392.954, 254.088 )
 scale = Vector2( 1.24298, 1.31594 )
-texture = ExtResource( 21 )
+texture = ExtResource( 28 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="furniture for attic/chair"]
 position = Vector2( -74.4168, -54.9547 )
@@ -350,16 +350,16 @@ shape = SubResource( 11 )
 [node name="study table" type="Sprite" parent="furniture for attic"]
 position = Vector2( 423.032, 188.995 )
 scale = Vector2( 1.49684, 1.43294 )
-texture = ExtResource( 22 )
+texture = ExtResource( 24 )
 
 [node name="gnb" type="Sprite" parent="furniture for attic/study table"]
 position = Vector2( -3.61771, -13.0415 )
-texture = ExtResource( 27 )
+texture = ExtResource( 31 )
 
 [node name="pnb" type="Sprite" parent="furniture for attic/study table"]
 modulate = Color( 0.968627, 0.752941, 0.752941, 1 )
 position = Vector2( -3.3916, -23.0556 )
-texture = ExtResource( 23 )
+texture = ExtResource( 25 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="furniture for attic/study table"]
 position = Vector2( -57.4544, -4.88506 )
@@ -372,7 +372,7 @@ shape = SubResource( 12 )
 [node name="window" type="Sprite" parent="furniture for attic"]
 position = Vector2( 173.418, 2.45567 )
 scale = Vector2( 1.24552, 1.24552 )
-texture = ExtResource( 25 )
+texture = ExtResource( 21 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="furniture for attic/window"]
 script = ExtResource( 20 )
@@ -384,7 +384,7 @@ shape = SubResource( 13 )
 [node name="curtain" type="Sprite" parent="furniture for attic"]
 position = Vector2( 197.135, 21.9117 )
 scale = Vector2( 0.677874, 0.677874 )
-texture = ExtResource( 24 )
+texture = ExtResource( 34 )
 
 [node name="boxes" type="Node2D" parent="furniture for attic"]
 position = Vector2( 1.18921, 1.18921 )
@@ -413,7 +413,7 @@ texture = ExtResource( 35 )
 modulate = Color( 0.839216, 0.737255, 0.737255, 1 )
 position = Vector2( 253.286, -9.6776 )
 scale = Vector2( 1.47832, 1.47832 )
-texture = ExtResource( 33 )
+texture = ExtResource( 27 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="furniture for attic/boxes/2"]
 position = Vector2( 57.1595, 66.2915 )
@@ -426,7 +426,7 @@ shape = SubResource( 14 )
 [node name="3" type="Sprite" parent="furniture for attic/boxes"]
 position = Vector2( 242.286, 9.3224 )
 scale = Vector2( 1.47832, 1.47832 )
-texture = ExtResource( 33 )
+texture = ExtResource( 27 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="furniture for attic/boxes/3"]
 position = Vector2( 56.483, 67.3061 )
@@ -439,7 +439,7 @@ shape = SubResource( 15 )
 [node name="4" type="Sprite" parent="furniture for attic/boxes"]
 position = Vector2( 202.896, 6.00676 )
 scale = Vector2( 1.33371, 1.33371 )
-texture = ExtResource( 34 )
+texture = ExtResource( 33 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="furniture for attic/boxes/4"]
 position = Vector2( 47.427, 45.423 )
@@ -479,7 +479,7 @@ shape = SubResource( 17 )
 modulate = Color( 0.894118, 0.827451, 0.827451, 1 )
 position = Vector2( 272.307, 232.237 )
 scale = Vector2( 1.33371, 1.33371 )
-texture = ExtResource( 34 )
+texture = ExtResource( 33 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="furniture for attic/boxes/7"]
 position = Vector2( 46.759, 37.7411 )
