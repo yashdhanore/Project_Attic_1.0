@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=2]
+[gd_scene load_steps=59 format=2]
 
 [ext_resource path="res://assets/wood flooring.png" type="Texture" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
@@ -37,6 +37,8 @@
 [ext_resource path="res://assets/furniture of attic/box1.png" type="Texture" id=35]
 [ext_resource path="res://assets/furniture of attic/clothes box.png" type="Texture" id=36]
 [ext_resource path="res://OtherCharacters/Mom.tscn" type="PackedScene" id=37]
+[ext_resource path="res://Door.gd" type="Script" id=38]
+[ext_resource path="res://Stage2.tscn" type="PackedScene" id=39]
 
 [sub_resource type="TileSet" id=1]
 0/name = "right roof.png 0"
@@ -233,6 +235,9 @@ extents = Vector2( 15.9724, 10 )
 
 [sub_resource type="RectangleShape2D" id=18]
 extents = Vector2( 14.9235, 12.7938 )
+
+[sub_resource type="RectangleShape2D" id=19]
+extents = Vector2( 29.8465, 30.2412 )
 
 [node name="Stage 1" type="Control"]
 anchor_left = 0.5
@@ -490,10 +495,21 @@ shape = SubResource( 18 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 175.127, 125.223 )
+collision_mask = 8
 
 [node name="Mom" parent="." instance=ExtResource( 37 )]
-position = Vector2( 268.999, 509.453 )
+position = Vector2( 266.329, 509.453 )
 speed = 101.0
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 270.188, 326.501 )
+
+[node name="Door" type="Area2D" parent="."]
+position = Vector2( 274.977, 377.759 )
+collision_layer = 8
+script = ExtResource( 38 )
+target_scene = ExtResource( 39 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door"]
+position = Vector2( -6.67419, 8.009 )
+shape = SubResource( 19 )
