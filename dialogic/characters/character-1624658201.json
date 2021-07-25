@@ -8,13 +8,13 @@
 	"name": "Bed",
 	"nickname": "",
 	"nickname_bool": false,
-	"offset_x": 0,
-	"offset_y": 0,
+	"offset_x": 50,
+	"offset_y": 50,
 	"portraits": [
 		{
 			"name": "Default",
 			"path": ""
 		}
 	],
-	"scale": 1
+	"scale": 50
 }
