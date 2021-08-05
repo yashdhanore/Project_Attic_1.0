@@ -3,19 +3,24 @@ extends KinematicBody2D
 export(float) var speed = 100
 var player = null
 var move = Vector2.ZERO
-var target = Vector2(276,326)
+onready var node = get_node("AnimatedSprite/AnimationPlayer")
+var target = Vector2(282,315)
+var can_move = true
+#var pos = node.instance()
 
 func _physics_process(delta):
-	move = Vector2.ZERO
 	
-	if player == 1519:
-		move = Vector2.ZERO
-	else:
+	if !global_position.is_equal_approx(to_local(target)):
+		if player == 1519:
+			move = Vector2.ZERO
+		else:
+			node.play("Enter")
+	
+func move_to_target_pos():
+		print(position.direction_to(target))
 		move = position.direction_to(target) * speed
-		
-	move = move_and_slide(move)
-	move = Vector2.ZERO
-
-
+	
+	#print(global_position)
+	
 func _on_Area2D_area_shape_entered(area_id, area, area_shape, local_shape):
 	player = area_id

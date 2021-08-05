@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Animation",
+"class": "AnimationResource",
+"language": "GDScript",
+"path": "res://resourceScript.gd"
+}, {
 "base": "Node",
 "class": "Dialogic",
 "language": "GDScript",
@@ -45,6 +50,7 @@ _global_script_classes=[ {
 "path": "res://StaticVariance.gd"
 } ]
 _global_script_class_icons={
+"AnimationResource": "",
 "Dialogic": "",
 "DialogicBackgroundMusic": "",
 "DialogicDefinitionsUtil": "",
