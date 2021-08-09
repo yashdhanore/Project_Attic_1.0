@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=2]
+[gd_scene load_steps=62 format=2]
 
 [ext_resource path="res://assets/wood flooring.png" type="Texture" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
@@ -39,6 +39,8 @@
 [ext_resource path="res://OtherCharacters/Mom.tscn" type="PackedScene" id=37]
 [ext_resource path="res://Door.gd" type="Script" id=38]
 [ext_resource path="res://Stage2.tscn" type="PackedScene" id=39]
+[ext_resource path="res://assets/key sprite.png" type="Texture" id=40]
+[ext_resource path="res://key.gd" type="Script" id=41]
 
 [sub_resource type="TileSet" id=1]
 0/name = "right roof.png 0"
@@ -238,6 +240,8 @@ extents = Vector2( 14.9235, 12.7938 )
 
 [sub_resource type="RectangleShape2D" id=19]
 extents = Vector2( 29.8465, 30.2412 )
+
+[sub_resource type="RectangleShape2D" id=20]
 
 [node name="Stage 1" type="Control"]
 anchor_left = 0.5
@@ -494,25 +498,41 @@ script = ExtResource( 19 )
 shape = SubResource( 18 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 175.127, 125.223 )
+position = Vector2( 174.127, 125.223 )
 collision_mask = 8
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
 
 [node name="Mom" parent="." instance=ExtResource( 37 )]
-position = Vector2( 266.329, 483.29 )
+position = Vector2( 267.273, 483.29 )
+rotation = 0.00213646
 speed = 101.0
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 270.188, 326.501 )
 
 [node name="Door" type="Area2D" parent="."]
-position = Vector2( 274.977, 377.759 )
+position = Vector2( 275.977, 378.759 )
 collision_layer = 8
 script = ExtResource( 38 )
 target_scene = ExtResource( 39 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Door"]
-position = Vector2( -7.73364, 5.89007 )
+position = Vector2( -5.84589, 1.17065 )
 shape = SubResource( 19 )
+
+[node name="key" type="Area2D" parent="."]
+position = Vector2( 79, 69 )
+rotation = -0.0144158
+script = ExtResource( 41 )
+
+[node name="Sprite" type="Sprite" parent="key"]
+position = Vector2( -2.97284, -2.04305 )
+rotation = -0.0130697
+scale = Vector2( 0.720677, 0.771515 )
+texture = ExtResource( 40 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="key"]
+position = Vector2( -4.21164, -2.18227 )
+shape = SubResource( 20 )

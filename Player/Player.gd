@@ -1,5 +1,6 @@
 extends KinematicBody2D
 
+
 var direction = Vector2()
 const TOP = Vector2(0,-1)
 const DOWN = Vector2(0,1)
@@ -9,6 +10,7 @@ var speed = 0
 const MAX_SPEED = 7000
 var velocity = Vector2()
 var input_buffer = [Vector2.ZERO]
+var key = 0
 
 func _physics_process(delta):
 	var is_moving = Input.is_action_pressed("ui_up") or Input.is_action_pressed("ui_right") or Input.is_action_pressed("ui_down") or Input.is_action_pressed("ui_left")
@@ -47,6 +49,7 @@ func _physics_process(delta):
 	velocity = speed * direction.normalized() * delta
 	
 	move_and_slide(velocity)
+	
 
 
 func _on_Area2D_body_entered(body):
