@@ -10,11 +10,11 @@ var speed = 0
 const MAX_SPEED = 7000
 var velocity = Vector2()
 var input_buffer = [Vector2.ZERO]
-var key = 0
+var keys = 0
 
 func _physics_process(delta):
 	var is_moving = Input.is_action_pressed("ui_up") or Input.is_action_pressed("ui_right") or Input.is_action_pressed("ui_down") or Input.is_action_pressed("ui_left")
-	
+	keys=min(keys,10)
 	direction = Vector2()
 	if is_moving:
 		speed = MAX_SPEED
