@@ -316,10 +316,11 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -216.112
-margin_top = -166.056
-margin_right = 239.888
-margin_bottom = 153.944
+margin_left = -109.732
+margin_top = -92.6389
+margin_right = 346.268
+margin_bottom = 227.361
+rect_scale = Vector2( 0.6, 0.6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -406,4 +407,7 @@ scale = Vector2( 1.26016, 1.19402 )
 texture = ExtResource( 17 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 145.316, 131.845 )
+position = Vector2( 529.196, -196.345 )
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+current = true

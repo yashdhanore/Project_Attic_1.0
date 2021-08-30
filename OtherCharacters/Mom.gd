@@ -3,19 +3,17 @@ extends KinematicBody2D
 export(float) var speed = 100
 var player = null
 var move = Vector2.ZERO
-var target = Vector2(276,326)
+onready var anim = get_node("AnimatedSprite/AnimationPlayer")
+var target = Vector2(282,315)
+var play = true
+onready var dialogue = Dialogic.start('walk-in')
 
-func _on_Area2D_area_entered(area):
-	player = get_parent().get_name()
-	
 func _physics_process(delta):
-	move = Vector2.ZERO
+	if play and player == 1514:
+		anim.play("enter")
+		play = false
+		add_child(dialogue)
 	
-	if player == null:
-		move = Vector2.ZERO
-	else:
-		move = position.direction_to(target) * speed
-	
-	move = move_and_slide(move) 
-
-
+func _on_Area2D_area_shape_entered(area_id, area, area_shape, local_shape):
+	player = area_id
+	#print(player)
