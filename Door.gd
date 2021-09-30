@@ -10,14 +10,11 @@ func _ready():
 
 func _input(event):
 	if event.is_action_pressed("enter_door"):
-		#get_parent().get_node("Player").keys
-		#print(get_parent().name)
 		print ("key in player " + str(get_parent().get_node("Player").keys))
-		#print ("key in doorgd " + str(key_new.get_key()))
-		#if get_overlapping_bodies().size() >=  2 && get_parent().get_node("Player").keys>0:
-			#event.key-=1
-			#queue_free()
-			#next_level()
+		if get_overlapping_bodies().size() >=  2 && str(get_parent().get_node("Player").keys)=='1':
+			get_parent().get_node("Player").keys=get_parent().get_node("Player").keys-1
+			queue_free()
+			next_level()
 			
 
 func next_level():
