@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1624701245.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "A thick off white curtain. The window is sealed shut."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.2.1",
+		"file": "timeline-1624701865.json",
+		"name": "timeline-3"
+	}
+}

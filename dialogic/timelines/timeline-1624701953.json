@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1624701305.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "A stack of old notebooks belonging to some 'Maya'."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.2.1",
+		"file": "timeline-1624701953.json",
+		"name": "timeline-6"
+	}
+}

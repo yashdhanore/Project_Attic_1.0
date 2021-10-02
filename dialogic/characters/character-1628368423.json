@@ -1,0 +1,20 @@
+{
+	"color": "#ffffffff",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1628368423.json",
+	"mirror_portraits": false,
+	"name": "Mom",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 140,
+	"offset_y": 70,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://assets/headshots/mom.png"
+		}
+	],
+	"scale": 18
+}
