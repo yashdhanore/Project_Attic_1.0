@@ -2,13 +2,9 @@
 # Project Attic (Temporary name)
 A story based puzzle RPG game which follows Kyra while she plots to escape the house and also involuntary learns more about the family who abducted her. Stay tuned to find out more!
 
-![front idle](https://user-images.githubusercontent.com/65765335/135924951-e3404f1d-9431-44a7-bb9f-d38b97b7adca.png)
-|:--:| 
-| *Kyra* |
-
-![standing](https://user-images.githubusercontent.com/65765335/135925817-7d67c52c-8bf0-4467-9aad-b37a3db7b57b.png)
-|:--:| 
-| *Mom* |
+*Kyra*          |  *Mom*
+:-------------------------:|:-------------------------:
+![front idle](https://user-images.githubusercontent.com/65765335/135924951-e3404f1d-9431-44a7-bb9f-d38b97b7adca.png)  |  ![standing](https://user-images.githubusercontent.com/65765335/135925817-7d67c52c-8bf0-4467-9aad-b37a3db7b57b.png)
 
 ![1](https://user-images.githubusercontent.com/65765335/140552767-a8eee793-67b3-4bfb-8f6e-dc9507bfc237.png)
 |:--:| 
