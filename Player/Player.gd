@@ -14,7 +14,7 @@ var keys = 0
 
 func _physics_process(delta):
 	var is_moving = Input.is_action_pressed("ui_up") or Input.is_action_pressed("ui_right") or Input.is_action_pressed("ui_down") or Input.is_action_pressed("ui_left")
-	keys=min(keys,10)
+	keys = min(keys,10)
 	direction = Vector2()
 	if is_moving:
 		speed = MAX_SPEED
@@ -54,3 +54,4 @@ func _physics_process(delta):
 
 func _on_Area2D_body_entered(body):
 	pass # Replace with function body.
+
