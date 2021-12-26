@@ -1,11 +1,163 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/bathroom furniture/toilet.png" type="Texture" id=2]
+[ext_resource path="res://assets/bathroom furniture/sink.png" type="Texture" id=3]
+[ext_resource path="res://assets/bathroom furniture/soap.png" type="Texture" id=4]
+[ext_resource path="res://assets/bathroom furniture/wall.png" type="Texture" id=5]
+[ext_resource path="res://assets/bathroom furniture/floor.png" type="Texture" id=6]
+[ext_resource path="res://assets/bathroom furniture/mat.png" type="Texture" id=7]
+[ext_resource path="res://assets/bathroom furniture/textured tile.png" type="Texture" id=8]
+[ext_resource path="res://assets/bathroom furniture/towel.png" type="Texture" id=9]
+[ext_resource path="res://assets/bathroom furniture/drain.png" type="Texture" id=10]
+[ext_resource path="res://assets/bathroom furniture/shower.png" type="Texture" id=11]
+[ext_resource path="res://assets/bathroom furniture/shelf.png" type="Texture" id=12]
+[ext_resource path="res://assets/bathroom furniture/shampoo.png" type="Texture" id=13]
+[ext_resource path="res://assets/bathroom furniture/mrror.png" type="Texture" id=14]
+
+[sub_resource type="TileSet" id=1]
+0/name = "floor.png 0"
+0/texture = ExtResource( 6 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 64, 64 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "textured tile.png 1"
+1/texture = ExtResource( 8 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 64, 64 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "wall.png 2"
+2/texture = ExtResource( 5 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 64, 64 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+
+[sub_resource type="TileSet" id=2]
+0/name = "floor.png 0"
+0/texture = ExtResource( 6 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 64, 64 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
 
 [node name="Stage3" type="Control"]
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2( 519.078, 384.713 )
+tile_set = SubResource( 1 )
+format = 1
+tile_data = PoolIntArray( -262149, 1073741826, 0, -262148, 1073741826, 0, -262147, 1073741826, 0, -262146, 1073741826, 0, -262145, 1073741826, 0, -327680, 1073741825, 0, -327679, 1073741825, 0, -196613, 1073741825, 0, -196612, 1073741825, 0, -196611, 1073741825, 0, -196610, 1073741825, 0, -196609, 1073741825, 0, -262144, 1073741825, 0, -262143, 1073741825, 0, -131077, 1073741824, 0, -131076, 1073741824, 0, -131075, 1073741824, 0, -131074, 1073741824, 0, -131073, 1073741824, 0, -196608, 1073741824, 0, -65541, 1073741824, 0, -65540, 1073741824, 0, -65539, 1073741824, 0, -65538, 1073741824, 0, -65537, 1073741824, 0, -131072, 1073741824, 0, -5, 0, 0, -4, 0, 0, -3, 0, 0, -2, 1073741824, 0, -1, 0, 0, -65536, 0, 0, -65535, 0, 0, 65534, 0, 0 )
+
+[node name="shower tile" type="TileMap" parent="."]
+modulate = Color( 0.858824, 0.886275, 0.921569, 1 )
+position = Vector2( 519.078, 384.713 )
+tile_set = SubResource( 2 )
+format = 1
+tile_data = PoolIntArray( -393216, 1073741825, 0, -393215, 1073741825, 0, -327680, 1073741825, 0, -327679, 1073741825, 0, -262144, 1073741825, 0, -262143, 1073741825, 0, -196608, 1073741824, 0, -196607, 1073741824, 0, -131072, 1073741824, 0, -131071, 1073741824, 0, -65536, 0, 0, -65535, 0, 0 )
+
+[node name="sink" type="Sprite" parent="."]
+position = Vector2( 394.014, 246.375 )
+scale = Vector2( 3.19752, 2.7219 )
+texture = ExtResource( 3 )
+
+[node name="soap" type="Sprite" parent="sink"]
+position = Vector2( 26.4066, 0.508385 )
+scale = Vector2( 0.432609, 0.751433 )
+texture = ExtResource( 4 )
+
+[node name="soap3" type="Sprite" parent="sink"]
+modulate = Color( 0.803922, 0.752941, 0.772549, 1 )
+position = Vector2( -6.8408, -2.35011 )
+rotation = -6.09044e-07
+scale = Vector2( 0.559037, 0.681314 )
+texture = ExtResource( 4 )
+
+[node name="soap2" type="Sprite" parent="sink"]
+modulate = Color( 1, 0.772549, 0.870588, 1 )
+position = Vector2( 28.4267, 8.39162 )
+rotation = -6.28319
+scale = Vector2( 0.375244, 0.931853 )
+texture = ExtResource( 4 )
+
+[node name="toilet" type="Sprite" parent="."]
+position = Vector2( 353.331, 237.048 )
+scale = Vector2( 2.47875, 2.24726 )
+texture = ExtResource( 2 )
+
+[node name="shampoo" type="Sprite" parent="."]
+position = Vector2( 735.306, 229.521 )
+scale = Vector2( 2.2302, 2.12028 )
+texture = ExtResource( 13 )
+
+[node name="mat" type="Sprite" parent="."]
+modulate = Color( 1, 0.933333, 0.933333, 1 )
+position = Vector2( 471.654, 112.713 )
+rotation = 4.71239
+scale = Vector2( 4.40299, 5.53055 )
+texture = ExtResource( 7 )
+
+[node name="towel" type="Sprite" parent="."]
+position = Vector2( 510.129, 285.031 )
+scale = Vector2( 2.45555, 2.82576 )
+texture = ExtResource( 9 )
+
+[node name="shelf" type="Sprite" parent="."]
+position = Vector2( 396.784, 311.352 )
+scale = Vector2( 3.5316, 3.63111 )
+texture = ExtResource( 12 )
+
+[node name="shower" type="Sprite" parent="."]
+position = Vector2( 470.025, 194.013 )
+scale = Vector2( 1.99151, 1.79196 )
+texture = ExtResource( 11 )
+
+[node name="mirror" type="Sprite" parent="."]
+position = Vector2( 393.364, 253.632 )
+scale = Vector2( 2.53928, 2.9637 )
+texture = ExtResource( 14 )
+
+[node name="drain" type="Sprite" parent="."]
+position = Vector2( 474.373, 300.161 )
+scale = Vector2( 2.74403, 2.85511 )
+texture = ExtResource( 10 )
+
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 520.492, 316.831 )
+position = Vector2( 423.961, 368.155 )
